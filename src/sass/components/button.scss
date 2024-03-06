@@ -1,0 +1,15 @@
+.button {
+  @include card-font-style();
+  font-weight: 400;
+  width: 232px;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  color: $primary-color;
+  background-color: $blue-color;
+  cursor: pointer;
+}
+
+.deal-button {
+  width: 292px;
+}
