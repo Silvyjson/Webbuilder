@@ -23,8 +23,6 @@ Project Structure
 │   │   └── (reusable components)
 │   ├── styles
 │   │   └── (SCSS files)
-│   ├── pages
-│   │   └── (NextJS pages)
 │   └── (other project files)
 ├── .eslintrc.cjs
 ├── .gitignore
