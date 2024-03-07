@@ -1,62 +1,64 @@
 .header-section {
   h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 3.75rem;
     letter-spacing: 0em;
     color: #2c384a;
   }
+}
 
-  .header-scetion_container {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    height: 50px;
+.header-scetion_container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  height: 60px;
 
-    .header-scetion_content {
-      display: flex;
-      gap: 20px;
-    }
+  span {
+    @include font-style();
+    @include display-style();
+    gap: 10px;
+    font-size: 0.8rem;
+    color: $text-color;
+  }
+}
 
-    span {
-      @include font-style();
-      @include display-style();
-      gap: 10px;
-      font-size: 14px;
-      color: $text-color;
-    }
+.header-scetion_content {
+  display: flex;
+  gap: 20px;
+}
 
-    .update-note {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
+.update-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 
-      p {
-        font-size: 13px;
-      }
-    }
+  p {
+    font-size: 0.7rem;
   }
 }
 
 .header-list-container {
   margin: 20px 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
 
-  .list-box {
-    @include display-style();
-    width: 105px;
-    height: 36px;
-    border-radius: 12px;
-    background-color: $primary-color;
+.list-box {
+  @include display-style();
+  gap: 5px;
+  width: 105px;
+  height: 36px;
+  border-radius: 12px;
+  background-color: $primary-color;
 
-    li {
-      @include font-style();
-      font-size: 13px;
-      color: $text-color;
-      cursor: pointer;
-    }
+  li {
+    @include font-style();
+    font-size: 0.7rem;
+    color: $text-color;
+    cursor: pointer;
   }
 }
 
@@ -64,15 +66,15 @@
   margin: 20px 0;
   display: flex;
   gap: 15px;
+}
 
-  .nav-list {
-    @include display-style();
-    gap: 15px;
+.nav-list {
+  @include display-style();
+  gap: 15px;
 
-    li {
-      @include font-style();
-      color: $primary-text-color;
-      cursor: pointer;
-    }
+  li {
+    @include font-style();
+    color: $primary-text-color;
+    cursor: pointer;
   }
 }

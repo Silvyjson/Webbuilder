@@ -40,7 +40,8 @@ const HostingCard = (props) => {
                         ))}
                     </div>
                 }
-                <div className='show-more'>Show more
+                <div className='show-more'>
+                    <p>Show more</p>
                     {arrowSrc && <img src={arrowSrc} alt="arrow" />}
                 </div>
             </span>
@@ -48,7 +49,7 @@ const HostingCard = (props) => {
                 <div className='rating-container'>
                     <h1>{rate}</h1>
                     <p>{remark}</p>
-                    <picture>{starIcon}</picture>
+                    <img src={starIcon} alt="star icon" />
                 </div>
                 <Button
                     label="View"

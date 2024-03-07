@@ -1,7 +1,7 @@
 import { arrowDown } from "../assets/images";
 
 const FooterLinks = (props) => {
-    const { title, links, state } = props;
+    const { title, links } = props;
 
     return (
         <div className="footer-links">

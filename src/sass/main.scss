@@ -1,7 +1,10 @@
 @import "./abstracts/mixins", "./abstracts/variables";
 
-@import "./base/reset", "./base/base";
+@import "./base/base";
 
-@import "./components/hosting-card", "./components/deals-card", "./components/button", "./components/rate-container", "./components/newletter";
+@import "./components/image", "./components/hosting-card",
+  "./components/deals-card", "./components/button",
+  "./components/rate-container", "./components/newletter";
 
-@import "./layout/navSection", "./layout/headerSection", "./layout/footer";
+@import "./layout/navSection", "./layout/headerSection", "./layout/footer",
+  "./layout/media-query";
