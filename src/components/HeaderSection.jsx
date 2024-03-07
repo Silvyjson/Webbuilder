@@ -5,8 +5,8 @@ const HeaderSection = () => {
     return (
         <section className="header-section">
             <h1>Best Website builders in the US</h1>
-            <div className="header-scetion_container">
-                <div className="header-scetion_content">
+            <div className="header-section_container">
+                <div className="header-section_content">
                     <span>
                         <img src={tickIcon} alt="tick icon" />
                         <article className="update-note">
@@ -18,7 +18,7 @@ const HeaderSection = () => {
                         <p>Advertising Disclosure</p>
                     </span>
                 </div>
-                <span>
+                <span className='search-relevent'>
                     <p>Top Relevant</p>
                     <img src={arrowDownIcon} alt="arrow down" />
                 </span>

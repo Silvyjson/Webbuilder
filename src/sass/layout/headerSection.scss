@@ -8,7 +8,7 @@
   }
 }
 
-.header-scetion_container {
+.header-section_container {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid $border-color;
@@ -24,7 +24,7 @@
   }
 }
 
-.header-scetion_content {
+.header-section_content {
   display: flex;
   gap: 20px;
 }
@@ -49,7 +49,8 @@
 .list-box {
   @include display-style();
   gap: 5px;
-  width: 105px;
+  max-width: 105px;
+  width: 100%;
   height: 36px;
   border-radius: 12px;
   background-color: $primary-color;
