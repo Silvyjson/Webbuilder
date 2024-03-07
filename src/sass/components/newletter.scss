@@ -6,32 +6,32 @@
 
   h1 {
     width: 40%;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 44px;
+    line-height: 2.6rem;
     letter-spacing: 0em;
     color: $primary-text-color;
   }
+}
 
-  .newsletter-form {
-    display: flex;
-    align-items: center;
+.newsletter-form {
+  display: flex;
+  align-items: center;
 
-    input {
-      width: 348px;
-      height: 52px;
-      border: none;
-      border-radius: 12px 0 0 12px;
-    }
-    button {
-      @include font-style();
-      font-size: 14px;
-      width: 97px;
-      height: 52px;
-      border: none;
-      border-radius: 0 12px 12px 0;
-      color: $primary-color;
-      background-color: $blue-color;
-    }
+  input {
+    width: 348px;
+    height: 52px;
+    border: none;
+    border-radius: 12px 0 0 12px;
+  }
+  button {
+    @include font-style();
+    font-size: 14px;
+    width: 97px;
+    height: 52px;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    color: $primary-color;
+    background-color: $blue-color;
   }
 }

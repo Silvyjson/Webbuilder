@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { arrowDownIcon, arrowrightIcon, tickIcon, warningIcon } from "../assets/images"
 
 const HeaderSection = () => {
@@ -28,11 +29,24 @@ const HeaderSection = () => {
 }
 
 
-
 const HeaderList = () => {
     const items = ["Tools", "AWS Builder", "Start Build", "Build Supplies", "Tooling", "BlueHosting"];
     const nav = ["Home", "Hosting for all", "Hosting", "Hosting", "Hosting5"];
-    const lastList = nav.length - 1
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const shouldDisplayDots = windowWidth < 550;
 
     return (
         <section>
@@ -46,14 +60,14 @@ const HeaderList = () => {
             <div className="header-navlist-container">
                 {nav.map((navItem, index) => (
                     <span className="nav-list" key={index}>
-                        <li style={{ fontSize: index === 0 ? '13px' : '14px', color: index === 0 || index === 2 ? '#727D87' : '#5C6874' }}>{navItem}</li>
-                        {index === lastList ? null : <img src={arrowrightIcon} alt="arrow right" />}
+                        {shouldDisplayDots && (index === 1 || index === 2 || index === 3) ? <li>...</li> : 
+                        <li style={{ fontSize: index === 0 ? '0.7rem' : '0.8rem', color: index === 0 || index === 2 ? '#727D87' : '#5C6874' }}>{navItem}</li>}
+                        {index === nav.length - 1 ? null : <img src={arrowrightIcon} alt="arrow right" />}
                     </span>
                 ))}
             </div>
         </section>
-    )
-}
-
+    );
+};
 
 export default HeaderSection
