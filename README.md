@@ -41,7 +41,7 @@ The project is based on the provided Figma design for a website builder's platfo
 
 How to Run
 
-1. Clone the repository: `git clone [repository_link]`
+1. Clone the repository: `git clone [https://github.com/Silvyjson/Webbuilder-Internship-Assignment-react.js.git]`
 2. Navigate to the project directory: `cd [project_directory]`
 3. Install dependencies: `npm install`
 4. Run the project: `npm run dev`
