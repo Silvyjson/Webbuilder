@@ -6,24 +6,22 @@
     line-height: 3.2rem;
     letter-spacing: 0em;
     margin-bottom: 30px;
-    color: #2C384A;
+    color: #2c384a;
   }
-}
-
-.show-more-deals {
-  display: none;
 }
 
 .deal-card--content {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
 
-  p,
-  h3,
-  h4 {
+  :is(p, h3, h4) {
     margin: 0;
   }
+}
+
+.deal-card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .deal-card {

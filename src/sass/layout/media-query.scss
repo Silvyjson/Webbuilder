@@ -2,35 +2,12 @@
   .main-section {
     width: 80%;
   }
-}
-
-@media screen and (max-width: 1000px) {
-  .deal-card--content .deal-card:nth-child(3) {
-    display: none;
-  }
-
-  .deal-card.show-deal {
-    display: flex !important;
-  }
-
-  .show-more-deals {
-    width: 100%;
-    display: flex;
-    color: $blue-color;
-    margin: 10px 0;
-    justify-content: flex-end;
-    cursor: pointer;
-  }
-
-  .deal-card {
-    width: 100%;
-    height: 350px;
-  }
 
   .deal-card--content {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
   }
 }
 
@@ -121,12 +98,6 @@
         margin: 0;
       }
     }
-  }
-
-  .deal-card--content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .newsLetter-setion {
