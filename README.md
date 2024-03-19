@@ -2,7 +2,7 @@ ReactJS/NextJS Internship Project
 
 Project Overview
 
-This repository showcases my implementation for the ReactJS/NextJS internship assignment at Radiant Riches LLC. The objective was to bring to life a website builder's platform based on the provided Figma design. The implementation focuses on modular components, project structure, and responsive design.
+This repository showcases my implementation for the ReactJS. The objective was to bring to life a website builder's platform based on the provided Figma design. The implementation focuses on modular components, project structure, and responsive design.
 
 Project Features
 
@@ -39,7 +39,7 @@ The project is based on the provided Figma design for a website builder's platfo
 
 How to Run
 
-1. Clone the repository: `git clone [https://github.com/Silvyjson/Webbuilder-Internship-Assignment.git]`
+1. Clone the repository: `git clone [https://github.com/Silvyjson/Webbuilder.git]`
 2. Navigate to the project directory: `cd [project_directory]`
 3. Install dependencies: `npm install`
 4. Run the project: `npm run dev`
