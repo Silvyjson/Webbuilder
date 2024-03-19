@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Silvyjson.github.io/Webbuilder-Internship-Assignment/",
+  "homepage": "https://Silvyjson.github.io/Webbuilder/",
   "type": "module",
   "scripts": {
     "dev": "vite",
